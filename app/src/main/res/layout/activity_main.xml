@@ -7,21 +7,25 @@
     tools:context="desipline.layout.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000"
+        android:baselineAlig3ned="true"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:baselineAligned="true"
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="큰 글씨"
+            android:text="텍스트"
+            android:background="#ffffff00"
             android:textColor="#ffff0000"
-            android:textSize="32dp"
+            android:textSize="24sp"
+            android:padding="20dp"
             />
 
 
@@ -29,19 +33,21 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="중간 글씨"
-            android:textColor="#ff00ff00"
-            android:textSize="22dp"
+            android:background="#ff00ffff"
+            android:text="텍스트"
+            android:textColor="#ffff0000"
+            android:textSize="24sp"
+            android:padding="20dp"
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="작은 글씨"
-            android:textColor="#ff0000ff"
-            android:textSize="12dp"
+            android:background="#ffff00ff"
+            android:text="텍스트"
+            android:textColor="#ffff0000"
+            android:textSize="24sp"
+            android:padding="20dp"
             />
 
     </LinearLayout>
